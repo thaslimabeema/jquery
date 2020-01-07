@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-eqiv="X-UA-Compatible" content="=" ie="edge">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <style>
+            .t1{
+                background-color:blue;
+            }
+        </style>
+
+
+        <ol>
+            <li class="head1">
+                <h1>Helo....1</h1>
+            </li>
+            <li>
+                <h1>Helo...2</h1>
+            </li>
+            <li class="head1">
+                <h1>Helo....3</h1>
+            </li>
+            <li>
+                <h1>Helo....4</h1>
+            </li>
+            <li class="head1">
+                <h1>Helo....5</h1>
+            </li>
+          
+        </ol>
+        <button type="button" onclick="test1()">Highlight odd</button>
+
+        <h4 id="h13">Hello</h4>
+        <h3 id="h11">Welcome</h3>
+        <h3 id="h12">how</h3>
+        <h2>Bye..</h2>
+        <h2>Bye..</h2>
+        <h2>Bye..</h2>
+        <h2>Bye..</h2>
+        <button type="button" onclick="test()">Show/Hide</button>
+
+        
+    </body>
+
+    <script>
+       
+     function test()
+     {
+         $("h4").fadeToggle();
+         $("h2").toggle(5000);
+         $("#h11").toggle(3000);
+         $("#h12").toggle(3000);
+     } 
+     function test1()
+     {
+        $(document).ready(function(){
+
+$("button").click(
+    function()
+    {
+        $(".head1").addClass("t1");
+    }
+     );
+ });
+        // $("h1:even").addClass("t1");
+     }
+    </script>
+    <script src="jquery.js" type="text/javascript"></script>
+</html>
